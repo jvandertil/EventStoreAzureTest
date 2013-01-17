@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EventStore">
+      <HintPath>..\lib\EventStore-net40\bin\EventStore.dll</HintPath>
+    </Reference>
+    <Reference Include="EventStore.Persistence.AzureTablesPersistence">
+      <HintPath>..\lib\EventStore-net40\plugins\persistence\azure-tables\EventStore.Persistence.AzureTablesPersistence.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProbabilisticPipelineHook.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

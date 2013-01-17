@@ -45,7 +45,6 @@ namespace EventStoreAzureTest
             {
                 Console.Write("Retrieving all AggregateRoots...");
                 stopWatch.Restart();
-                // No events will be dispatched, so this will get the whole DB in a table scan.
                 var allEvents = eventStore.Advanced.GetUndispatchedCommits().ToArray();
                 stopWatch.Stop();
                 Console.WriteLine("done in {0} ms.", stopWatch.ElapsedMilliseconds);
@@ -54,12 +53,17 @@ namespace EventStoreAzureTest
 
         private static IStoreEvents WireupEventStore()
         {
+            var hook = new ProbabilisticPipelineHook();
+
             var es = Wireup.Init()
                .LogToOutputWindow()
                .UsingAzureTablesPersistence("Tables")
                     .InitializeStorageEngine()
                .UsingBinarySerialization()
+               .HookIntoPipelineUsing(hook)
                .Build();
+
+            hook.Persistence = es.Advanced;
 
             return es;
         }
