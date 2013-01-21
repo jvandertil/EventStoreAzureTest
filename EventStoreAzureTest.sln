@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Desktop
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStoreAzureTest", "EventStoreAzureTest\EventStoreAzureTest.csproj", "{8662FE9A-5CAF-493B-A3A2-E3CA2E0CC3A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStorePurger", "EventStorePurger\EventStorePurger.csproj", "{235665AF-7804-4311-84F8-389245C58C60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStoreAzureGetTest", "EventStoreAzureGetTest\EventStoreAzureGetTest.csproj", "{7A6CC43F-463D-4B92-8C5A-1A6D43701643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStoreAzureParallelGet", "EventStoreAzureParallelGet\EventStoreAzureParallelGet.csproj", "{685B3205-B9BD-485D-ABBB-22F997DF73BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +19,18 @@ Global
 		{8662FE9A-5CAF-493B-A3A2-E3CA2E0CC3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8662FE9A-5CAF-493B-A3A2-E3CA2E0CC3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8662FE9A-5CAF-493B-A3A2-E3CA2E0CC3A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{235665AF-7804-4311-84F8-389245C58C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235665AF-7804-4311-84F8-389245C58C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235665AF-7804-4311-84F8-389245C58C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235665AF-7804-4311-84F8-389245C58C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A6CC43F-463D-4B92-8C5A-1A6D43701643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6CC43F-463D-4B92-8C5A-1A6D43701643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A6CC43F-463D-4B92-8C5A-1A6D43701643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A6CC43F-463D-4B92-8C5A-1A6D43701643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{685B3205-B9BD-485D-ABBB-22F997DF73BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{685B3205-B9BD-485D-ABBB-22F997DF73BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{685B3205-B9BD-485D-ABBB-22F997DF73BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{685B3205-B9BD-485D-ABBB-22F997DF73BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
